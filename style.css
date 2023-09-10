@@ -1,0 +1,164 @@
+:root {
+    /* Primary Colors */
+    --orange: hsl(25, 97%, 53%);
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --very-light-grey: hsla(216, 12%, 54%, 0.1);
+}
+
+* {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    color: var(--white);
+}
+
+.attribution a {
+    color: rgba(0, 255, 255, 0.7);
+}
+
+.container {
+    width: 420px;
+    height: 420px;
+    background-color: var(--dark-blue);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.icon-star {
+    width: 45px;
+    height: 45px;
+    background-color: var(--very-light-grey);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rating-form h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.rating-form p {
+    font-weight: 400;
+    color: var(--white);
+    line-height: 22px;
+    color: var(--light-grey);
+}
+
+.rating-form .rating-list {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-form .rating-list label {
+    width: 50px;
+    height: 50px;
+    background-color: var(--very-light-grey);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--light-grey);
+    padding-top: 5px;
+}
+
+.rating-form .rating-list label:hover:not(.selected) {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.rating-form .rating-list .selected {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.rating-form .submit-btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.rating-form .submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.thank-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.thank-card .rate-detail {
+    height: 40px;
+    font-size: 16px;
+    color: var(--orange);
+    background-color: var(--very-light-grey);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.thank-card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.thank-card p {
+    font-size: 16px;
+    color: var(--light-grey);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
